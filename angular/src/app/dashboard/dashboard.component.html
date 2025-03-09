@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bento Grid Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <div class="log">
+            <h2>Dashboard</h2>
+        </div>
+    </header>
+    <br><br><br><br>
+
+    <div class="dashboard-container">
+        <!-- 🔹 Primer div - Pequeño -->
+        <div class="dashboard-card small">
+            <h3>{{ proyectos[0]?.nombre }}</h3>
+            <canvas #chartCanvas></canvas>
+        </div>
+    
+        <!-- 🔹 Segundo div - Pequeño -->
+        <div class="dashboard-card small">
+            <h3>{{ proyectos[1]?.nombre }}</h3>
+            <canvas #chartCanvas></canvas>
+        </div>
+    
+        <!-- 🔹 Tercer div - Pequeño -->
+        <div class="dashboard-card small">
+            <h3>{{ proyectos[2]?.nombre }}</h3>
+            <canvas #chartCanvas></canvas>
+        </div>
+    
+        <!-- 🔹 Cuarto div - Grande (Facturas por Tipo) -->
+        <div class="dashboard-card large">
+            <canvas #facturasChart></canvas>
+        </div>
+    
+        <!-- 🔹 Quinto div - Alto y Estrecho (Saldos de Facturas) -->
+        <div class="dashboard-card tall">
+            <canvas #saldosChart></canvas>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer>
+        <p>&copy; 2025 Dashboard. DAM G1 Guillermo, Diego y Marcos.</p>
+    </footer>
+</body>
+</html>

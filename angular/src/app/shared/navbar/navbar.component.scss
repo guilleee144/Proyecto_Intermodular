@@ -1,0 +1,64 @@
+.navbar {
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .navbar-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+  
+    .nav-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+    }
+  
+    .auth-buttons {
+      display: flex;
+      align-items: center;
+  
+      .btn {
+        background: #007bff;
+        color: white;
+        padding: 8px 15px;
+        margin-left: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+  
+      .btn-outline {
+        background: transparent;
+        border: 1px solid white;
+      }
+  
+      .btn-danger {
+        background: red;
+      }
+  
+      .user-email {
+        margin-right: 15px;
+      }
+      body.login-page .navbar {
+        display: none;
+      }
+      
+      /* ✅ Cuando el usuario está autenticado, oculta los botones de login y registro */
+      body.authenticated .auth-buttons {
+        display: none;
+      }
+    }
+  }
+  

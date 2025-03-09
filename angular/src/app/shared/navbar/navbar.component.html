@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf="mostrarNavbar">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Mi Aplicación</a>
+
+    <!-- Botón para pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/proyectos-view" routerLinkActive="active">Proyectos</a>
+        </li>
+      </ul>
+
+      <!-- 🔥 Botón de Cerrar Sesión SIEMPRE visible dentro de la app -->
+      <button (click)="cerrarSesion()" class="btn btn-danger">Cerrar Sesión</button>
+    </div>
+  </div>
+</nav>
